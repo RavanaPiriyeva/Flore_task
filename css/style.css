@@ -1,0 +1,115 @@
+nav {
+  padding: 10px;
+  margin-top: 45px;
+}
+
+nav .mini-menu {
+  position: absolute;
+  padding: 30px;
+  width: 140px;
+  left: -30px;
+  opacity: 0;
+  height: 0px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  overflow: hidden;
+}
+
+nav .nav-logo img {
+  max-width: 200px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+nav .nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 0 9%;
+  padding-right: 20px;
+}
+
+nav .nav-menu li {
+  list-style: none;
+  -webkit-transition: border-bottom 2s;
+  transition: border-bottom 2s;
+  position: relative;
+}
+
+nav .nav-menu li:hover {
+  cursor: pointer;
+}
+
+nav .nav-menu li:hover .mini-menu {
+  opacity: 1;
+  height: 200px;
+}
+
+nav .nav-menu li::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  background-color: black;
+  bottom: -1px;
+  left: 0%;
+  border-radius: 3px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+nav .nav-menu li:hover::before {
+  width: 100%;
+}
+
+nav .nav-menu .nav-home {
+  border-bottom: 1px solid black;
+}
+
+nav .search-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+nav .search-section i {
+  font-size: 25px;
+}
+
+nav .icon-badge {
+  font-size: 8px;
+  color: white;
+  padding: 5px;
+}
+
+nav .shopping-menu {
+  font-size: 15px;
+  list-style: none;
+  position: absolute;
+  top: 50px;
+  left: -70px;
+  width: 200px;
+  font-family: sans-serif;
+  font-weight: 100;
+  background-color: white;
+  border: 1px solid #bdbdbd;
+  padding: 30px 20px;
+  color: #525050;
+  opacity: 0;
+}
+
+nav .fa-bag-shopping:hover {
+  cursor: pointer;
+}
+
+nav .fa-bag-shopping:hover .shopping-menu {
+  opacity: 1;
+}
+/*# sourceMappingURL=style.css.map */
